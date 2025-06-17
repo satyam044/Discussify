@@ -14,6 +14,8 @@
         include("./client/signup.php");
     }else if(isset($_GET["login"]) && !isset($_SESSION["user"]["name"])){
         include("./client/login.php");
+    }else if(isset($_GET["ask"])){
+        include("./client/ask.php");
     }
     ?>
 </body>

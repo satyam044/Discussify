@@ -10,6 +10,7 @@
         <?php 
           if (isset($_SESSION['user']['name'])) { ?>
             <a class="nav-link" href="./server/requests.php?logout=true">Logout</a>
+            <a class="nav-link" href="?ask=true">Ask A Question</a>
         <?php } ?>
         <?php 
           if (!isset($_SESSION['user']['name'])) { ?>
