@@ -9,6 +9,6 @@
             <label for="password" class="form-label">Password *</label>
             <input type="password" name="password" class="form-control" placeholder="Enter your password" id="password" required>
         </div>
-        <button type="submit" class="mt-3 offset-sm-3 btn btn-primary">Login</button>
+        <button type="submit" name="login" class="mt-3 offset-sm-3 btn btn-primary">Login</button>
     </form>
 </div>
