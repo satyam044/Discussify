@@ -7,11 +7,12 @@
     <?php include("./client/components.php") ?>
 </head>
 <body>
-    <?php 
+    <?php
+    session_start();
     include("./client/header.php");
-    if(isset($_GET["signup"])){
+    if(isset($_GET["signup"]) && !isset($_SESSION["user"]["name"])){
         include("./client/signup.php");
-    }else if(isset($_GET["login"])){
+    }else if(isset($_GET["login"]) && !isset($_SESSION["user"]["name"])){
         include("./client/login.php");
     }
     ?>
