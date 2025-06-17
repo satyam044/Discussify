@@ -1,6 +1,6 @@
 <div class="container">
     <h1 class="my-3 offset-sm-3">Login</h1>
-    <form>
+    <form method="post" action="./server/requests.php">
         <div class="mb-2 col-6 offset-sm-3">
             <label for="email" class="form-label">Email Address *</label>
             <input type="email" name="email" class="form-control" placeholder="Enter your email" id="email" required>

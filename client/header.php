@@ -9,7 +9,7 @@
         <a class="nav-link active" aria-current="page" href="./">Home</a>
         <?php 
           if (isset($_SESSION['user']['name'])) { ?>
-            <a class="nav-link" href="?login=true">Logout</a>
+            <a class="nav-link" href="./server/requests.php?logout=true">Logout</a>
         <?php } ?>
         <?php 
           if (!isset($_SESSION['user']['name'])) { ?>
