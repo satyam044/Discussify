@@ -1,5 +1,5 @@
 <div>
-    <h1 class="my-3  offset-sm-3">Categories</h1>
+    <h1 class="my-3 offset-sm-3">Categories</h1>
     <?php
     include("./common/config.php");
     $query = "SELECT * FROM category";
@@ -8,7 +8,7 @@
             $name = $row['name'];
             $id = $row['id'];
             echo "<div class='row question-list'>
-            <h5><a href='?q-id=$id'>$name</a></h5>
+            <h5><a href='?c-id=$id'>$name</a></h5>
             </div>";
         }
     ?>

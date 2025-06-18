@@ -74,5 +74,14 @@
         } else{
             echo "Answer is not submitted";
         }
+    } else if(isset($_GET['delete'])) {
+        $qid = $_GET['delete'];
+        $query = $conn->prepare("DELETE FROM questions WHERE id=$qid");
+        $result = $query->execute();
+        if($result){
+            header("location: /discussify");
+        }else {
+            echo "Question not deleted";
+        }
     }
 ?>
