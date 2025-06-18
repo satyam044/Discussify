@@ -7,6 +7,7 @@
     $row = $result->fetch_assoc();
     echo "<h2>Question: ".$row['title']."</h2>
     <p>".$row['description']."</p>";
+    include("answers.php")
     ?>
     <form action="./server/requests.php" method="post">
         <input type="hidden" name="question_id" value="<?php echo $qid ?>">

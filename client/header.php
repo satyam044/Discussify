@@ -7,18 +7,18 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="./">Home</a>
+        <a class="nav-link" href="#">Category</a>
+        <a class="nav-link" href="#">Latest Questions</a>
         <?php 
           if (isset($_SESSION['user']['name'])) { ?>
-            <a class="nav-link" href="./server/requests.php?logout=true">Logout</a>
             <a class="nav-link" href="?ask=true">Ask A Question</a>
+            <a class="nav-link" href="./server/requests.php?logout=true">Logout</a>
         <?php } ?>
         <?php 
           if (!isset($_SESSION['user']['name'])) { ?>
             <a class="nav-link" href="?login=true">Login</a>
             <a class="nav-link" href="?signup=true">Signup</a>
         <?php } ?>
-        <a class="nav-link" href="#">Category</a>
-        <a class="nav-link" href="#">Latest Questions</a>
       </div>
     </div>
   </div>

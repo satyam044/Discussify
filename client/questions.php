@@ -1,6 +1,7 @@
 <div class="container">
-    <h1 class="my-3 offset-sm-5">Questions</h1>
-    <div class="col-8">
+    <div class="row">
+        <div class="col-8">
+        <h1 class="my-3 offset-sm-5">Questions</h1>
         <?php 
             include("./common/config.php");
             $query = "SELECT * FROM questions";
@@ -13,5 +14,9 @@
                 </div>";
             }
         ?>
+        </div>
+            <div class="col-4">
+            <?php include("categoryList.php") ?>
+        </div>
     </div>
 </div>
