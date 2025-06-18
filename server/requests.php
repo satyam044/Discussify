@@ -58,5 +58,21 @@
         } else{
             echo "Question is added to website";
         }
+    } else if(isset($_POST['answer'])){
+        $answer=$_POST['answer'];
+        $question_id=$_POST['question_id'];
+        $user_id=$_SESSION['user']['user_id'];
+
+        $query = $conn->prepare("INSERT INTO `answers`
+        (`id`, `answer`, `question_id`, `user_id`)
+        VALUES(NULL, '$answer', '$question_id', '$user_id');
+        ");
+
+        $result = $query->execute();
+        if ($result) {
+            header("location: /discussify?q-id=$question_id");
+        } else{
+            echo "Answer is not submitted";
+        }
     }
 ?>
