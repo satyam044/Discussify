@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+.question-list{
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+}
+.question-list h5{
+    margin: 0;
+    padding: 0;
+}
