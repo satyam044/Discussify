@@ -44,9 +44,6 @@ Prerequisite: PHP 7+, MySQL, Apache (e.g., XAMPP or Laragon)
 
 Clone the repo
 
-bash
-Copy
-Edit
 git clone https://github.com/satyam044/Discussify.git
 Import the database
 
@@ -80,9 +77,5 @@ GitHub Profile »
 
 ⭐ Like this Project?
 If you find this useful, star the repo or fork it and build your own discussion app!
-
-markdown
-Copy
-Edit
 
 ---
